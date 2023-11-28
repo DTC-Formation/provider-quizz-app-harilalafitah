@@ -10,7 +10,7 @@ class QuestionIndexProvider with ChangeNotifier {
     notifyListeners();
   }
 
-  void initalQuestionIndex() {
+  void initQuestionIndex() {
     questionIndex = 0;
     notifyListeners();
   }

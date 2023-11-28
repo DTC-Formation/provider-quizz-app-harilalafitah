@@ -44,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (BuildContext context) => const QuestionPage()));
                   context.read<ScoreCounterProvider>().clearScore();
-                  context.read<QuestionIndexProvider>().initalQuestionIndex();
+                  context.read<QuestionIndexProvider>().initQuestionIndex();
                 },
                 style: const ButtonStyle(
                   fixedSize: MaterialStatePropertyAll(Size.fromWidth(180)),

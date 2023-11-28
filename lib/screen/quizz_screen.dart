@@ -23,9 +23,10 @@ class _QuestionPageState extends State<QuestionPage> {
         appBar: AppBar(
           automaticallyImplyLeading: false,
           backgroundColor: Colors.blue,
-          title: const Text(
-            'Quizz',
-            style: TextStyle(
+          title: Text(
+            questionsList[context.watch<QuestionIndexProvider>().questionIndex]
+                .topic,
+            style: const TextStyle(
               color: Colors.white,
             ),
           ),
